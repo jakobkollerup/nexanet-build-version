@@ -16,7 +16,7 @@ class AddBuildVersionHeaders
     {
         $response = $next($request);
 
-        $response->headers->set('X-Build-Version', config('build-version.version'));
+        $response->headers->set('X-Build-Version', config('build-version.build_version', '1.0.0'));
         $response->headers->set('X-Minimum-Build', config('build-version.minimum_build', '1.0.0'));
 
         return $response;
