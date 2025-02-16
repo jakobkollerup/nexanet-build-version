@@ -1,6 +1,6 @@
 <?php
 
-namespace YourVendor\BuildVersion;
+namespace Nexanet\BuildVersion;
 
 use Illuminate\Support\ServiceProvider;
 use Nexanet\BuildVersion\Middleware\AddBuildVersionHeaders;
