@@ -11,7 +11,10 @@ _A Laravel package to automatically inject build version headers into API respon
 ---
 
 ## 📦 Configuration
-The package can be configured via the `config/build-version.php` file. To publish the configuration file, run the following command:
+Simple add envoriment variable `BUILD_VERSION` and `MINIMUM_BUILD` to your `.env` file. The package will automatically inject these values into the response headers.
+
+
+Furthermore, the package can be configured via the `config/build-version.php` file. To publish the configuration file, run the following command:
 ```bash
 php artisan vendor:publish --provider="Nexanet\BuildVersion\BuildVersionServiceProvider"
 ```
